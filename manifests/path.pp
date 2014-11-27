@@ -53,8 +53,12 @@ class env::path (
           $existing_file_default = false
           $profile_file_default  = '/etc/profile.d/path.sh'
         }
+        '7': {
+          $existing_file_default = false
+          $profile_file_default  = '/etc/profile.d/path.sh'
+        }
         default: {
-          fail("Path is only supported on EL 5 and 6. Your lsbmajdistrelease is identified as <${::lsbmajdistrelease}>.")
+          fail("Path is only supported on EL 5, 6 and 7. Your lsbmajdistrelease is identified as <${::lsbmajdistrelease}>.")
         }
       }
     }

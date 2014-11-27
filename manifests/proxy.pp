@@ -42,8 +42,12 @@ class env::proxy (
           $existing_file_default = false
           $profile_file_default  = '/etc/profile.d/proxy.sh'
         }
+        '7': {
+          $existing_file_default = false
+          $profile_file_default  = '/etc/profile.d/proxy.sh'
+        }
         default: {
-          fail("Proxy is only supported on EL 5 and 6. Your lsbmajdistrelease is identified as <${::lsbmajdistrelease}>.")
+          fail("Proxy is only supported on EL 5, 6 and 7. Your lsbmajdistrelease is identified as <${::lsbmajdistrelease}>.")
         }
       }
     }

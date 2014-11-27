@@ -11,6 +11,7 @@ This module is built for use with Puppet v3 on the following platforms and suppo
 
 * EL 5
 * EL 6
+* EL 7
 * Suse 10
 * Suse 11
 * Debian 7
